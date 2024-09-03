@@ -9,19 +9,22 @@
   <br>
 
 - [Bootstrap 5](#bootstrap-5)
-  - [How to use bootstrap?](#how-to-use)
+  - [How to use bootstrap?](#how-to-use-bootstrap)
   - [File Structure](#file-structure)
   - [Contents](#contents)
   - [Customization](#customization)
-  - [Layouts] (Containers, Breakpoints)
-  - [Utilities]
-  - [Components] (Offcanvas), Floating Labels
-  - [Bootstrap Approach](#approach)
-  - [Bootstrap-5 vs. Bootstrap-3 & 4](#comparison)
+  - [Layouts](#layouts) (Containers, Breakpoints)
+  - [Utilities](#utilities)
+  - [Components](#components) (Offcanvas, Floating Labels)
+  - [Bootstrap Approach](#bootstrap-approach)
+  - [Comparison](#comparison)
     <br>
 - [References](#references)
+  <br>
 
 ## CSS Grid
+
+Link: https://css-tricks.com/snippets/css/complete-guide-grid/</small>
 
 CSS Grid Layout (aka “Grid” or “CSS Grid”), is a two-dimensional grid-based layout system.
 <br>
@@ -192,7 +195,16 @@ Link: https://www.w3schools.com/css/css_text.asp
 
 ## Bootstrap 5
 
-Bootstrap is a powerful, feature-packed frontend toolkit.
+Bootstrap is a powerful, feature-packed frontend framework.
+
+- Bootstrap 5 is the newest version of [Bootstrap](https://www.w3schools.com/bootstrap/default.asp).
+- The main differences between Bootstrap 5 and Bootstrap 3 & 4, is that Bootstrap 5 has switched to [JavaScript](https://www.w3schools.com/js/default.asp) instead of [jQuery](https://www.w3schools.com/jquery/default.asp).
+- The biggest difference between Bootstrap 3 and Bootstrap 4 & 5 is that Bootstrap 5 now uses flexbox, instead of floats, to handle the layout.
+- **Browser compatibility:** Bootstrap 5 is compatible with all modern browsers (Chrome, Firefox, Edge, Safari, and Opera). 
+  **Note:** If you need support for IE11 and down, you must use either BS4 or BS3.
+- **If you require IE8-9 support, use [Bootstrap 3.](https://www.w3schools.com/bootstrap/default.asp)**
+
+<br>
 
 ### How to use Bootstrap?
 
@@ -322,6 +334,71 @@ Now change $primary in custom.scss file and see the customized output.
 🔼 [Back to Top](#topics)
 <br>
 
+## Layouts
+
+### Breakpoints
+
+![alt text](image-2.png)
+<br>
+
+### Containers
+
+The <code>max-width</code> of the container will change on different screen sizes/viewports:
+![alt text](image-3.png)
+<br>
+
+### Grid
+
+Link: https://www.w3schools.com/bootstrap5/bootstrap_grid_basic.php
+![alt text](image-4.png)
+🔼 [Back to Top](#topics)
+<br>
+
+## Utilities
+
+![alt text](image-5.png)
+🔼 [Back to Top](#topics)
+
+### Dark Mode
+
+If you want to change the whole page to a darker color, you can add <code><span style="color: red;">data-bs-theme="dark"</span></code> to the <html> element.
+
+```html
+<html lang="en" data-bs-theme="dark">
+	<body>
+		<!-- Table will get dark theme only -->
+		<table class="table" data-bs-theme="dark"></table>
+	</body>
+</html>
+```
+
+<br>
+
+## Components
+
+### Offcanvas
+
+Offcanvas is similar to modals (hidden by default and shown when activated), except that is often used as a sidebar navigation menu.
+Link: https://www.w3schools.com/bootstrap5/bootstrap_offcanvas.php
+
+### Form Floating Labels
+
+Link: https://www.w3schools.com/bootstrap5/bootstrap_form_floating_labels.php
+
+```html
+<div class="form-floating mb-3 mt-3">
+	<input type="text" class="form-control" id="email" placeholder="Enter email" name="email" />
+	<label for="email">Email</label>
+</div>
+
+<div class="form-floating mt-3 mb-3">
+	<input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd" />
+	<label for="pwd">Password</label>
+</div>
+```
+
+![alt text](image-6.png)
+
 ## Bootstrap Approach
 
 - Components should be responsive and mobile-first
@@ -332,6 +409,31 @@ Now change $primary in custom.scss file and see the customized output.
 - Whenever possible, avoid enforcing strict HTML requirements (children selectors)
 
 🔼 [Back to Top](#topics)
+<br>
+
+## Comparison
+
+- Jumbotrons are no longer supported in Bootstrap 5. However, you can use a <div> element and add special helper classes together with a color class to achieve the same effect
+  Here's a comparison of Bootstrap 3, 4, and 5 in tabular form:
+
+| **Feature**              | **Bootstrap 3**                                    | **Bootstrap 4**                                    | **Bootstrap 5**                                                           |
+| ------------------------ | -------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------- |
+| **CSS Preprocessor**     | Less                                               | Sass                                               | Sass (with CSS variables)                                                 |
+| **Grid System**          | 12-column grid                                     | Improved 12-column grid with Flexbox               | Enhanced grid with CSS Grid & Flexbox                                     |
+| **Grid Classes**         | `.col-xs-*`, `.col-sm-*`, `.col-md-*`, `.col-lg-*` | `.col-sm-*`, `.col-md-*`, `.col-lg-*`, `.col-xl-*` | `.col-`, `.col-sm-*`, `.col-md-*`, `.col-lg-*`, `.col-xl-*`, `.col-xxl-*` |
+| **Flexbox Support**      | No                                                 | Yes                                                | Yes                                                                       |
+| **jQuery Dependency**    | Yes                                                | Yes                                                | No                                                                        |
+| **New Components**       | Basic components, limited by design                | Added cards, badges, flexbox utilities             | Offcanvas, accordion, expanded forms                                      |
+| **Browser Support**      | IE 8 and above                                     | IE 10 and above                                    | Modern browsers only (No IE support)                                      |
+| **Utility Classes**      | Basic utility classes, less modular                | More utility classes, modular approach             | Utility API for custom utilities, more extensive                          |
+| **Customization**        | Limited, through variables and overrides           | Improved customization with Sass variables         | Extensive customization with Sass & CSS variables                         |
+| **JavaScript Plugins**   | jQuery-based plugins                               | Updated jQuery plugins                             | Vanilla JS plugins, no jQuery dependency                                  |
+| **Form Elements**        | Basic form elements                                | Improved form controls and layout                  | Redesigned forms, more accessible and customizable                        |
+| **Typography**           | Basic typography styles                            | Enhanced typography, better defaults               | Modernized typography with better spacing and defaults                    |
+| **Responsive Utilities** | `.hidden-*`, `.visible-*` classes                  | `.d-*`, `.d-*-none`, etc. for display management   | Extended responsive utilities, `.d-*-flex`, `.d-*-grid`                   |
+| **Icons**                | Glyphicons (bundled)                               | No built-in icons, recommended Font Awesome        | No built-in icons, recommended external icon libraries                    |
+
+<br>
 
 ## References
 
@@ -339,7 +441,3 @@ Now change $primary in custom.scss file and see the customized output.
 - https://www.w3schools.com/css/css_grid.asp
 
 🔼 [Back to Top](#topics)
-
-```
-
-```
