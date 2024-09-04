@@ -365,6 +365,7 @@ The <code>max-width</code> of the container will change on different screen size
 ### Grid
 
 Link: https://www.w3schools.com/bootstrap5/bootstrap_grid_basic.php
+
 ![alt text](image-4.png)
 🔼 [Back to Top](#topics)
 <br>
@@ -451,7 +452,7 @@ Link: https://www.w3schools.com/bootstrap5/bootstrap_form_floating_labels.php
 | **Grid Classes**         | `.col-xs-*`, `.col-sm-*`, `.col-md-*`, `.col-lg-*` | `.col-sm-*`, `.col-md-*`, `.col-lg-*`, `.col-xl-*` | `.col-`, `.col-sm-*`, `.col-md-*`, `.col-lg-*`, `.col-xl-*`, `.col-xxl-*` |
 | **Flexbox Support**      | No                                                 | Yes                                                | Yes                                                                       |
 | **jQuery Dependency**    | Yes                                                | Yes                                                | No                                                                        |
-| **New Components**       | Basic components, limited by design                | Added cards, badges, flexbox utilities             | Offcanvas, accordion, expanded forms                                      |
+| **New Components**       | Basic components, limited by design                | Added cards, badges, flexbox utilities             | Offcanvas, expanded forms                                                 |
 | **Browser Support**      | IE 8 and above                                     | IE 10 and above                                    | Modern browsers only (No IE support)                                      |
 | **Utility Classes**      | Basic utility classes, less modular                | More utility classes, modular approach             | Utility API for custom utilities, more extensive                          |
 | **Customization**        | Limited, through variables and overrides           | Improved customization with Sass variables         | Extensive customization with Sass & CSS variables                         |
