@@ -5,6 +5,7 @@
   - [CSS Grid Item](#css-grid-item)
   - [Others](#others)
 - [CSS Text](#css-text)
+- [CSS Math Functions](#css-math-functions)
 
   <br>
 
@@ -21,6 +22,7 @@
     <br>
 - [References](#references)
   <br>
+  <br>
 
 ## CSS Grid
 
@@ -32,16 +34,16 @@ CSS Grid Layout (aka “Grid” or “CSS Grid”), is a two-dimensional grid-ba
 ![alt text](image.png)
 
 ```html
-<div class="grid-container">
-	<div class="grid-item">1</div>
-	<div class="grid-item">2</div>
-	<div class="grid-item">3</div>
-	<div class="grid-item">4</div>
-	<div class="grid-item">5</div>
-	<div class="grid-item">6</div>
-	<div class="grid-item">7</div>
-	<div class="grid-item">8</div>
-	<div class="grid-item">9</div>
+<div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">4</div>
+  <div class="item">5</div>
+  <div class="item">6</div>
+  <div class="item">7</div>
+  <div class="item">8</div>
+  <div class="item">9</div>
 </div>
 ```
 
@@ -100,20 +102,20 @@ CSS Grid Layout (aka “Grid” or “CSS Grid”), is a two-dimensional grid-ba
 
 ```css
 .item1 {
-	grid-column-start: <number> | <name> | span <number> | span <name> | auto;
-	grid-column-end: <number> | <name> | span <number> | span <name> | auto;
-	grid-row-start: <number> | <name> | span <number> | span <name> | auto;
-	grid-row-end: <number> | <name> | span <number> | span <name> | auto;
-	/* If no grid-column-end/grid-row-end is declared, the item will span 1 track by default. */
+  grid-column-start: <number> | <name> | span <number> | span <name> | auto;
+  grid-column-end: <number> | <name> | span <number> | span <name> | auto;
+  grid-row-start: <number> | <name> | span <number> | span <name> | auto;
+  grid-row-end: <number> | <name> | span <number> | span <name> | auto;
+  /* If no grid-column-end/grid-row-end is declared, the item will span 1 track by default. */
 
-	grid-column: 1 / 3;
-	grid-row: 1 / span 2;
+  grid-column: 1 / 3;
+  grid-row: 1 / span 2;
 
-	grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
+  grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
 
-	justify-self: start | end | center | stretch;
-	align-self: start | end | center | stretch;
-	place-self: <align-self> / <justify-self>; /* center stretch; */
+  justify-self: start | end | center | stretch;
+  align-self: start | end | center | stretch;
+  place-self: <align-self> / <justify-self>; /* center stretch; */
 }
 ```
 
@@ -123,7 +125,10 @@ CSS Grid Layout (aka “Grid” or “CSS Grid”), is a two-dimensional grid-ba
 ### Others
 
 <strong>Sizing Keywords:</strong> <kbd>min-content | max-content | auto | fr</kbd>
+
 <strong>Sizing Functions:</strong> <kbd>fit-content() | minmax() | repeat() </kbd>
+
+Link: <a href="https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/" target="_blank">`auto-fill` vs `auto-fit`</a>
 
 ```css
 grid-template-columns: repeat(8, minmax(10px, 1fr));
@@ -132,32 +137,32 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 /* auto-fill | auto-fit */
 
 .container {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: masonry;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: masonry;
 }
 ```
 
 🔼 [Back to Top](#topics)
 
 <br>
-<hr>
+<br>
 
 ## CSS Text
 
 Link: https://www.w3schools.com/css/css_text.asp
 
-##### Text Color
+### Text Color
 
 <a href="https://coolors.co/contrast-checker/030a13-ddd71a" target="_blank">Color Contrast Checker</a>
 
-##### Text Alignment
+### Text Alignment
 
 - <code><span style="color:red;">text-align</span></code>
 - <code><span style="color:red;">text-align-last</span></code>
 - <code><span style="color:red;">vertical-align</span></code>
 
-##### Text Decoration
+### Text Decoration
 
 - <code><span style="color:red;">text-decoration-line</span></code>
 - <code><span style="color:red;">text-decoration-color</span></code>
@@ -165,11 +170,11 @@ Link: https://www.w3schools.com/css/css_text.asp
 - <code><span style="color:red;">text-decoration-thickness</span></code>
 - <code><span style="color:red;">text-decoration</span></code>
 
-##### Text Transformation
+### Text Transformation
 
 - <code><span style="color:red;">text-transform</span></code>
 
-##### Text Spacing
+### Text Spacing
 
 - <code><span style="color:red;">text-indent</span></code>
 - <code><span style="color:red;">letter-spacing</span></code>
@@ -177,11 +182,11 @@ Link: https://www.w3schools.com/css/css_text.asp
 - <code><span style="color:red;">word-spacing</span></code>
 - <code><span style="color:red;">white-space</span></code>
 
-##### Text Shadow
+### Text Shadow
 
 - <code><span style="color:red;">text-shadow:</span> horizontal vertical blur color</code>
 
-##### Text Effects <small>https://www.w3schools.com/css/css3_text_effects.asp</small>
+### Text Effects <small>https://www.w3schools.com/css/css3_text_effects.asp</small>
 
 - <code><span style="color:red;">text-overflow</span></code>
 - <code><span style="color:red;">word-wrap</span></code>
@@ -190,10 +195,20 @@ Link: https://www.w3schools.com/css/css_text.asp
 
 🔼 [Back to Top](#topics)
 <br>
+<br>
 
-<hr>
+## CSS Math Functions
 
-## Bootstrap 5
+Link: https://www.w3schools.com/css/css_math_functions.asp
+
+- <code><span style="color:red;">calc()</span></code>
+- <code><span style="color:red;">min()</span></code>
+- <code><span style="color:red;">max()</span></code>
+
+<br>
+<br>
+
+# Bootstrap 5
 
 Bootstrap is a powerful, feature-packed frontend framework.
 
@@ -212,15 +227,15 @@ Bootstrap is a powerful, feature-packed frontend framework.
 
 ```html
 <link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-	crossorigin="anonymous"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+  crossorigin="anonymous"
 />
 <script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-	crossorigin="anonymous"
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
 ></script>
 ```
 
@@ -365,10 +380,10 @@ If you want to change the whole page to a darker color, you can add <code><span 
 
 ```html
 <html lang="en" data-bs-theme="dark">
-	<body>
-		<!-- Table will get dark theme only -->
-		<table class="table" data-bs-theme="dark"></table>
-	</body>
+  <body>
+    <!-- Table will get dark theme only -->
+    <table class="table" data-bs-theme="dark"></table>
+  </body>
 </html>
 ```
 
@@ -387,13 +402,25 @@ Link: https://www.w3schools.com/bootstrap5/bootstrap_form_floating_labels.php
 
 ```html
 <div class="form-floating mb-3 mt-3">
-	<input type="text" class="form-control" id="email" placeholder="Enter email" name="email" />
-	<label for="email">Email</label>
+  <input
+    type="text"
+    class="form-control"
+    id="email"
+    placeholder="Enter email"
+    name="email"
+  />
+  <label for="email">Email</label>
 </div>
 
 <div class="form-floating mt-3 mb-3">
-	<input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd" />
-	<label for="pwd">Password</label>
+  <input
+    type="text"
+    class="form-control"
+    id="pwd"
+    placeholder="Enter password"
+    name="pswd"
+  />
+  <label for="pwd">Password</label>
 </div>
 ```
 
@@ -409,6 +436,7 @@ Link: https://www.w3schools.com/bootstrap5/bootstrap_form_floating_labels.php
 - Whenever possible, avoid enforcing strict HTML requirements (children selectors)
 
 🔼 [Back to Top](#topics)
+<br>
 <br>
 
 ## Comparison
