@@ -2,7 +2,11 @@
 
 - JavaScript Introduction
 - Scope, Hoisting
-- Variables, Data Types
+- Variables (`var`, `let`, `const` keyword)
+- Data Types
+- Numbers
+  - BigInt
+  - Number Methods
 - Strings
 - Clean Coding
 - Higher Order Function
@@ -71,7 +75,7 @@ document.getElementById("myP").innerHTML = "My first paragraph.";
 <br>
 
 <details>
-  <summary><h2 style="display: inline;"><a href="https://www.w3schools.com/js/js_variables.asp?goalId=75e13f34-a8d9-4e12-8fdf-47f4abaab487" target="_blank">Variables, Let, Const & Data Types
+  <summary><h2 style="display: inline;"><a href="https://www.w3schools.com/js/js_variables.asp?goalId=75e13f34-a8d9-4e12-8fdf-47f4abaab487" target="_blank">Variables, Var, Let, Const Keyword
 </a></h2></summary>
 <br>
 
@@ -345,6 +349,87 @@ const x = 5;
 
 <br>
 </details>
+<br>
+
+<details>
+  <summary><h2 style="display: inline;"><a href="https://www.w3schools.com/js/js_datatypes.asp?goalId=75e13f34-a8d9-4e12-8fdf-47f4abaab487" target="_blank">Data Types
+</a></h2></summary>
+<br>
+JavaScript has 8 Datatypes
+
+- String
+- Number
+- Bigint
+- Boolean
+- Undefined
+- Null
+- Symbol
+- Object
+
+![alt text](image-4.png)
+
+<a href="https://www.javascripttutorial.net/javascript-primitive-vs-reference-values/" target="_blank">JavaScript Primitive vs. Reference Values</a>
+
+- A **primitive value** is a value that has no properties or methods. Primitive values are **immutable** (they are hardcoded and cannot be changed).
+- Objects are mutable: They are addressed by reference, not by value.
+
+<br>
+
+#### JavaScript Booleans
+
+Link: https://www.w3schools.com/js/js_booleans.asp?goalId=75e13f34-a8d9-4e12-8fdf-47f4abaab487
+
+- A JavaScript Boolean represents one of two values: true or false.
+
+</details>
+<br>
+
+#### JavaScript Numbers
+
+Link: https://www.w3schools.com/js/js_numbers.asp?goalId=75e13f34-a8d9-4e12-8fdf-47f4abaab487
+
+- JavaScript Numbers are Always 64-bit Floating Point
+- JavaScript will try to convert strings to numbers in all numeric operations.
+
+```js
+let x = "100";
+let y = "10";
+
+let a = x / y;
+let b = x * y;
+let c = x - y;
+let d = x + y; // This won't work
+```
+
+<br>
+
+- `NaN` is a number: typeof NaN returns `number`
+- Infinity is a number: typeof Infinity returns number.
+
+```js
+typeof NaN;
+typeof Infinity;
+```
+
+<br>
+
+By default, JavaScript displays numbers as base 10 decimals.
+But you can use the **toString()** method to output numbers from base 2 to base 36.
+Hexadecimal is base 16. Decimal is base 10. Octal is base 8. Binary is base 2.
+
+```js
+let myNumber = 32;
+myNumber.toString(32);
+myNumber.toString(16);
+myNumber.toString(12);
+myNumber.toString(10);
+myNumber.toString(8);
+myNumber.toString(2);
+```
+
+#### BigInt
+
+`BigInt` is the second numeric data type in JavaScript (after Number).
 
 ### Clean Coding
 
