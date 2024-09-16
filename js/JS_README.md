@@ -7,9 +7,12 @@
 - Numbers
   - BigInt
   - Number Methods
+  - Number Properties
 - Strings
+  - String Methods
+  - String Search
+  - String Templates
 - Clean Coding
-- Higher Order Function
   <br>
 
 <details>
@@ -381,9 +384,6 @@ Link: https://www.w3schools.com/js/js_booleans.asp?goalId=75e13f34-a8d9-4e12-8fd
 
 - A JavaScript Boolean represents one of two values: true or false.
 
-</details>
-<br>
-
 #### JavaScript Numbers
 
 Link: https://www.w3schools.com/js/js_numbers.asp?goalId=75e13f34-a8d9-4e12-8fdf-47f4abaab487
@@ -431,7 +431,23 @@ myNumber.toString(2);
 
 `BigInt` is the second numeric data type in JavaScript (after Number).
 
-### Clean Coding
+</details>
+<br>
+
+<details>
+  <summary><h2 style="display: inline;"><a href="https://www.w3schools.com/js/js_strings.asp?goalId=75e13f34-a8d9-4e12-8fdf-47f4abaab487" target="_blank">String</a></h2></summary>
+  <br>
+
+- Strings are for storing text
+- Javascript strings are primitive and **immutable**: All string methods produce a new string without altering the original string.
+
+<br>
+</details>
+<br>
+
+<details>
+  <summary><h2 style="display: inline;"><a>Clean Coding</a></h2></summary>
+<br>
 
 - Add a semicolon at the end of each executable statement.
 
@@ -474,8 +490,9 @@ document.getElementById("demo").innerHTML = "Hello Dolly!";
 
 - JavaScript keywords are reserved words. Reserved words cannot be used as names for variables.
 
+</details>
+<br>
+
 ## References
 
 - https://www.w3schools.com/js/default.asp
-
-🔼 [Back to Top](#topics)
