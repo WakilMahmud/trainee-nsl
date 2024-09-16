@@ -47,7 +47,7 @@
 Old JavaScript examples may use a type attribute: `<script type="text/javascript">`.
 The type attribute is not required. JavaScript is the default scripting language in HTML.
 
-- Scripts can be placed in the <body>, or in the <head> section of an HTML page, or in both.
+- Scripts can be placed in the `<body>`, or in the `<head>` section of an HTML page, or in both.
 - Placing scripts at the bottom of the <body> element improves the display speed, because script interpretation slows down the display.
 - External JavaScript. `<script src="myScript.js"></script>`
   <br>
@@ -290,7 +290,7 @@ console.log(x); // 23
 ### Hoisting
 
 - Hoisting is JavaScript's default behavior of moving all declarations (**variable** and **function** declarations) to the top of the current scope.
-- - Variables defined with `var` is hoisted to the top of the block, but initialized with `undefined`.
+- Variables defined with `var` is hoisted to the top of the block, but initialized with `undefined`.
 - Variables defined with `let` and `const` are hoisted to the top of the block, but not *initialized*.
   Meaning: The block of code is aware of the variable, but it cannot be used until it has been declared.
 
@@ -441,7 +441,6 @@ myNumber.toString(2);
 - Strings are for storing text
 - Javascript strings are primitive and **immutable**: All string methods produce a new string without altering the original string.
 
-<br>
 </details>
 <br>
 
@@ -449,46 +448,7 @@ myNumber.toString(2);
   <summary><h2 style="display: inline;"><a>Clean Coding</a></h2></summary>
 <br>
 
-- Add a semicolon at the end of each executable statement.
-
-```js
-let a, b, c; // Declare 3 variables
-a = 5; // Assign the value 5 to a
-b = 6; // Assign the value 6 to b
-c = a + b; // Assign the sum of a and b to c
-```
-
-- When separated by semicolons, multiple statements on one line are allowed.
-
-```js
-a = 5;
-b = 6;
-c = a + b;
-```
-
-- Ending statements with semicolon is not required, but highly recommended.
-- JavaScript ignores multiple spaces. You can add white space to your script to make it more readable.
-
-```js
-let person = "Hege";
-let person = "Hege";
-```
-
-- A good practice is to put spaces around operators ( = + - \* / )
-
-```js
-let x = y + z;
-```
-
-- For best readability, programmers often like to avoid code lines longer than 80 characters.
-
-If a JavaScript statement does not fit on one line, the best place to break it is after an operator.
-
-```js
-document.getElementById("demo").innerHTML = "Hello Dolly!";
-```
-
-- JavaScript keywords are reserved words. Reserved words cannot be used as names for variables.
+Link: https://lokesh-prajapati.medium.com/26-clean-code-javascript-tips-for-efficient-programming-02ccdfebebc2
 
 </details>
 <br>
