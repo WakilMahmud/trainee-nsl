@@ -75,7 +75,6 @@ document.getElementById("myP").innerHTML = "My first paragraph.";
 ```
 
 </details>
-<br>
 
 <details>
   <summary><h2 style="display: inline;"><a href="https://www.w3schools.com/js/js_variables.asp?goalId=75e13f34-a8d9-4e12-8fdf-47f4abaab487" target="_blank">Variables, Var, Let, Const Keyword
@@ -135,11 +134,11 @@ Using the underscore is not very common in JavaScript, but a convention among pr
 const x = 2; // Allowed
 
 {
-	const x = 3; // Allowed
+  const x = 3; // Allowed
 }
 
 {
-	const x = 4; // Allowed
+  const x = 4; // Allowed
 }
 ```
 
@@ -165,7 +164,7 @@ let d = 2 + 3 + "5"; // '55'
 ```js
 var a = 6;
 function f() {
-	console.log("Inside function ", a);
+  console.log("Inside function ", a);
 }
 
 console.log("Outside function ", a);
@@ -176,7 +175,7 @@ f();
 ```js
 let a = 6;
 function f() {
-	console.log("Inside function ", a);
+  console.log("Inside function ", a);
 }
 
 console.log("Outside function ", a);
@@ -197,7 +196,7 @@ f();
 <br>
 
 </details>
-<br>
+
 <details>
   <summary><h2 style="display: inline;"><a href="https://www.w3schools.com/js/js_scope.asp?goalId=75e13f34-a8d9-4e12-8fdf-47f4abaab487" target="_blank">Scope, Hoisting
 </a></h2></summary>
@@ -220,7 +219,7 @@ myFunction();
 // code here can use carName
 
 function myFunction() {
-	carName = "Volvo";
+  carName = "Volvo";
 }
 ```
 
@@ -247,7 +246,7 @@ function myFunction() {
 // var has no Block scope. var has function scope.
 
 {
-	var x = 2;
+  var x = 2;
 }
 // x CAN be used here
 ```
@@ -261,8 +260,8 @@ var x = 23;
 console.log(x); // 23
 
 function myFunc() {
-	x = 10;
-	console.log(`${x} from myFunc()`); // 10 from myFunc()
+  x = 10;
+  console.log(`${x} from myFunc()`); // 10 from myFunc()
 }
 
 myFunc();
@@ -277,8 +276,8 @@ var x = 23;
 console.log(x); // 23
 
 function myFunc() {
-	var x = 10; // It will create another new variable which is different from GLOBAL x = 23. Here var x = 10 -> accessibility exist within myFunc()
-	console.log(`${x} from myFunc()`); // 10 from myFunc()
+  var x = 10; // It will create another new variable which is different from GLOBAL x = 23. Here var x = 10 -> accessibility exist within myFunc()
+  console.log(`${x} from myFunc()`); // 10 from myFunc()
 }
 
 myFunc();
@@ -352,7 +351,6 @@ const x = 5;
 
 <br>
 </details>
-<br>
 
 <details>
   <summary><h2 style="display: inline;"><a href="https://www.w3schools.com/js/js_datatypes.asp?goalId=75e13f34-a8d9-4e12-8fdf-47f4abaab487" target="_blank">Data Types
@@ -432,7 +430,6 @@ myNumber.toString(2);
 `BigInt` is the second numeric data type in JavaScript (after Number).
 
 </details>
-<br>
 
 <details>
   <summary><h2 style="display: inline;"><a href="https://www.w3schools.com/js/js_strings.asp?goalId=75e13f34-a8d9-4e12-8fdf-47f4abaab487" target="_blank">String</a></h2></summary>
@@ -442,7 +439,6 @@ myNumber.toString(2);
 - Javascript strings are primitive and **immutable**: All string methods produce a new string without altering the original string.
 
 </details>
-<br>
 
 <details>
   <summary><h2 style="display: inline;"><a>Clean Coding</a></h2></summary>
