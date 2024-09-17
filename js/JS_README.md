@@ -102,7 +102,6 @@ document.getElementById("myP").innerHTML = "My first paragraph.";
   - Names can also begin with $ and \_
   - Names are case sensitive (y and Y are different variables).
   - Reserved words (like JavaScript keywords) cannot be used as names.
-    ![alt text](image-4.png)
     <br>
 
 ### JavaScript Dollar Sign $
