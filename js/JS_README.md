@@ -1,7 +1,16 @@
 # Topics
 
 - JavaScript Introduction
-- Scope, Hoisting
+
+  - Properties of JavaScript
+  - What can JavaScript do?
+  - How does JS Engine work?
+  - JS Runtime
+  - How to use JavaScript?
+  - JS Output
+  - JS Comments
+
+- Scope, Hoisting, Strict Mode
 - Variables (`var`, `let`, `const` keyword)
 - Data Types
 - Numbers
@@ -23,6 +32,56 @@
 - <strong>ECMA-262</strong> is the official name of the standard.
 - <strong>ECMAScript</strong> is the official name of the language.
 - JavaScript uses the Unicode character set. Unicode covers (almost) all the characters, punctuations, and symbols in the world.
+
+- JavaScript is a **single-threaded**, garbage-collected, JIT-compiled, dynamically typed, prototype-based programming language.
+
+### Properties of JavaScript
+
+- **High Abstraction**
+  - Does not need any resource management and memory allocation
+- **Garbage Collected**
+  - It means that we don’t need to worry about garbage cleanup. An algorithm inside JavaScript take care of garbage collection and cleaning.
+- **JIT Compiled**
+
+  - JavaScript is not purely interpreted language, rather modern JavaScript is **Just In Time** compiled.
+
+    High Level Code ⇒ Compiler ⇒ Machine Code
+
+    Compiler turning high-level code to machine code.
+
+![alt text](image-9.png)
+
+- **Multi-paradigm**
+  - Paradigm: Mindset of code structure which will determine your coding style
+    1. Procedural Programming
+    2. Object Oriented Programming (OOP)
+    3. Functional Programming (FP)
+- **Prototyped-based**
+
+  ![alt text](image-8.png)
+
+- **Functions are first-class citizen**
+
+  - It means that you can throw a function anywhere you want. You can treat a function as a variable. You can pass a function as a parameter of a function. You can return a function from inside of another function. This feature gives you a lot of flexibility while using functions.
+
+    ```jsx
+    button.addEventListener("click", () => {
+      console.log("Button is clicked");
+    });
+
+    // **addEventListener -> This is a function**
+    // **()=>{}           -> This is also a function, but inside of another function**
+    ```
+
+- **Dynamically Typed**
+  You don’t need to specify the type of the variable on the declaration.
+  ```jsx
+  let age = 85; // age is a number
+  age = "potato"; //  age is string
+  ```
+- **Single Threaded**
+  Single threaded means the execution of instructions happens in a single sequence.
+  <br>
   <br>
 
 ### What can JavaScript do?
@@ -33,6 +92,14 @@
 - JavaScript can hide HTML Elements
 - JavaScript can show HTML Elements
   <br>
+
+### How does JS Engine work?
+
+![](image-10.png)
+
+### JS Runtime
+
+![alt text](image-11.png)
 
 ### How to use JavaScript?
 
@@ -197,7 +264,7 @@ f();
 </details>
 
 <details>
-  <summary><h2 style="display: inline;"><a href="https://www.w3schools.com/js/js_scope.asp?goalId=75e13f34-a8d9-4e12-8fdf-47f4abaab487" target="_blank">Scope, Hoisting
+  <summary><h2 style="display: inline;"><a href="https://www.w3schools.com/js/js_scope.asp?goalId=75e13f34-a8d9-4e12-8fdf-47f4abaab487" target="_blank">Scope, Hoisting, Strict Mode
 </a></h2></summary>
 <br>
 
@@ -349,6 +416,14 @@ const x = 5;
 ```
 
 <br>
+
+### Strict Mode
+
+- Strict mode makes it easier to write **"secure"** JavaScript.
+- Strict mode is declared by adding "use strict"; to the beginning of a script or a function.
+- Strict mode changes previously accepted **"bad syntax"** into real errors.
+- With strict mode, you can not, for example, use undeclared variables.
+
 </details>
 
 <details>
