@@ -2,6 +2,10 @@
 
 - This Keyword
 - Asynchronous JavaScript
+  - Callback
+  - Asynchronous
+  - Promises
+  - async/await
 - JS Web APIs
 - JS vs JQuery
 
@@ -33,7 +37,22 @@
 - Memory allocation happens in Memory Heap
 - JS Engine is inside JS Runtime
 - We get asynchronous behavior due to Web API inside Runtime
-- JS is synchronous, but it can do asynchronous task due to Runtime, especially for Web API
+- JS is synchronous, but it can do asynchronous task due to Runtime, especially for Web API.
+
+Callback => Promise => Async/Await
+
+- "async and await make promises easier to write"
+- async makes a function return a Promise
+- await makes a function wait for a Promise
+
+<a href="https://www.freecodecamp.org/news/asynchronous-programming-in-javascript-examples/?ref=dailydev" target="_blank">Asynchronous Programming in JavaScript – Callbacks, Promises, & Async/Await Examples</a>
+
+```js
+// asynchronous example code
+```
+
+Promise methods
+
 </details>
 <br>
 
