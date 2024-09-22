@@ -289,7 +289,9 @@ function myFunction() {
 ```
 
 ⚠️ Do NOT create global variables unless you intend to.
+
 ⚠️ Global variables (or functions) can overwrite window variables (or functions).
+
 ⚠️ Any function, including the window object, can overwrite global variables and functions.
 
 - With JavaScript, the global scope is the JavaScript environment.
@@ -336,17 +338,17 @@ console.log(x);
 ```js
 // Variables declared with var are in the function scope.
 
-console.log(x); // undefined
+console.log(x);
 var x = 23;
-console.log(x); // 23
+console.log(x);
 
 function myFunc() {
-  var x = 10; // It will create another new variable which is different from GLOBAL x = 23. Here var x = 10 -> accessibility exist within myFunc()
-  console.log(`${x} from myFunc()`); // 10 from myFunc()
+  var x = 10;
+  console.log(`${x} from myFunc()`);
 }
 
 myFunc();
-console.log(x); // 23
+console.log(x);
 ```
 
 <br>
@@ -378,36 +380,33 @@ console.log(x); // 23
 ### Example
 
 ```js
-console.log(x); // undefined
+console.log(x);
 x = 8;
-console.log(x); // 8
+console.log(x);
 var x;
 ```
 
 ```js
-console.log(x); // undefined
+console.log(x);
 x = 8;
-console.log(x); // 8
+console.log(x);
 var x = 6;
-console.log(x); // 6
+console.log(x);
 ```
 
 ```js
-// ReferenceError: x is not defined
 x = 8;
 console.log(x);
 let x;
 ```
 
 ```js
-// SyntaxError: Missing initializer in const declaration
 x = 8;
 console.log(x);
 const x;
 ```
 
 ```js
-// ReferenceError: x is not defined
 console.log(x);
 x = 8;
 console.log(x);
