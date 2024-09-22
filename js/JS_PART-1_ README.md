@@ -26,7 +26,6 @@
 
 <details>
   <summary><h2 style="display: inline;"><a href="https://www.w3schools.com/js/js_intro.asp?goalId=75e13f34-a8d9-4e12-8fdf-47f4abaab487" target="_blank">Introduction</a></h2></summary>
-<br>
 
 - JavaScript was invented by <b>Brendan Eich</b> in 1995, and became an ECMA standard in 1997.
 - <strong>ECMA-262</strong> is the official name of the standard.
@@ -321,17 +320,17 @@ function myFunction() {
 // If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable.
 // Your global variables (or functions) can overwrite window variables (or functions).
 
-console.log(x); // undefined
+console.log(x);
 var x = 23;
-console.log(x); // 23
+console.log(x);
 
 function myFunc() {
   x = 10;
-  console.log(`${x} from myFunc()`); // 10 from myFunc()
+  console.log(`${x} from myFunc()`);
 }
 
 myFunc();
-console.log(x); // 10
+console.log(x);
 ```
 
 ```js
