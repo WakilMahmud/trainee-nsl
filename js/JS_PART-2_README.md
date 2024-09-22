@@ -2,11 +2,19 @@
 
 - This Keyword
 - Asynchronous JavaScript
+
   - Callback
   - Asynchronous
   - Promises
   - async/await
+
 - JS Web APIs
+  - Forms API
+  - History API
+  - Storage API
+  - Worker API
+  - Fetch API
+  - Geolocation API
 - JS vs JQuery
 
 <br>
@@ -52,6 +60,36 @@ Callback => Promise => Async/Await
 ```
 
 Promise methods
+
+</details>
+<br>
+
+<details>
+  <summary><h2 style="display: inline;"><a href="https://www.w3schools.com/js/js_api_intro.asp?goalId=75e13f34-a8d9-4e12-8fdf-47f4abaab487" target="_blank">Web APIs</a></h2></summary>
+<br>
+
+- A Web API is an application programming interface for the Web.
+- It can greatly simplify complex functions.
+- It can provide easy syntax to complex code.
+
+### Web Storage API
+
+- The data is stored with no expiration date, and will not be deleted when the browser is closed.
+- The difference is that the sessionStorage object stores data for one session. The data is deleted when the browser is closed.
+
+### Web Workers and the DOM
+
+- Normally web workers are not used for simple scripts, but for more **CPU intensive** tasks.
+
+<a href="https://softwareg.com.au/blogs/computer-hardware/cpu-intensive-vs-io-intensive" target="_blank">CPU Intensive Vs IO Intensive
+</a>
+
+- Since web workers are in external files, they do not have access to the following JavaScript objects:
+  - The window object
+  - The document object
+  - The parent object
+
+<br>
 
 </details>
 <br>
